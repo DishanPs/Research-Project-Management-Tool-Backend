@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 connectDB();
 
 app.get("/", (req, res) => {
-  res.send("Hello Node!");
+  res.json("Hello Node!");
 });
 
 const groupApi = require("./src/api/groups.api");
